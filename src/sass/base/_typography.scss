@@ -1,0 +1,11 @@
+.heading-primary {
+  font-weight: 300;
+  &--main {
+    font-size: 6rem;
+    display: block;
+  }
+  &--sub {
+    font-size: 2rem;
+    display: block;
+  }
+}

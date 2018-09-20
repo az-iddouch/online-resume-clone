@@ -1,0 +1,28 @@
+.header__upper {
+  background-color: $color-primary-dark;
+  padding: 1.7rem 0;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: border 0.3s color 0.3s;
+  &:hover,
+  &:active {
+    border-bottom: 2px solid white;
+    padding-bottom: 1.5rem;
+    opacity: 1;
+  }
+}

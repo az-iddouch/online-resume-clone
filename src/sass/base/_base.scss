@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 10 (10px that we want) / 16 (16px the default browser size)
+  we did that so when the user change the font size in the browser
+    our website change accordinely */
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: red;
+  box-sizing: border-box;
+  margin: 3rem 10rem;
+  background-color: $color-grey-dark;
+}
+
+.wrapper {
+  max-width: 88%;
+  margin: 0 auto;
+}

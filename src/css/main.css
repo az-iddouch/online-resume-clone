@@ -1,3 +1,59 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* 10 (10px that we want) / 16 (16px the default browser size)
+  we did that so when the user change the font size in the browser
+    our website change accordinely */
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif; }
+
+body {
+  background-color: red;
+  box-sizing: border-box;
+  margin: 3rem 10rem;
+  background-color: #37383c; }
+
+.wrapper {
+  max-width: 88%;
+  margin: 0 auto; }
+
+.heading-primary {
+  font-weight: 300; }
+  .heading-primary--main {
+    font-size: 6rem;
+    display: block; }
+  .heading-primary--sub {
+    font-size: 2rem;
+    display: block; }
+
+.header__upper {
+  background-color: #0088cc;
+  padding: 1.7rem 0; }
+
+.navigation__list {
+  display: flex; }
+
+.navigation__item {
+  list-style: none;
+  margin-right: 2rem; }
+
+.navigation__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+  transition: border 0.3s color 0.3s; }
+  .navigation__link:hover, .navigation__link:active {
+    border-bottom: 2px solid white;
+    padding-bottom: 1.5rem;
+    opacity: 1; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -23,3 +79,30 @@
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header {
+  background-color: #0aa1da;
+  color: #fff;
+  box-shadow: 0px 10px 8px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2; }
+  .header__hero {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__image-wrapper {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    overflow: hidden; }
+  .header__image {
+    height: 100%;
+    width: 100%; }
+
+.section-about {
+  background-color: #576268; }
+  .section-about__text {
+    padding: 3.8rem 0;
+    font-size: 1.5rem;
+    color: #e4e4e4; }
