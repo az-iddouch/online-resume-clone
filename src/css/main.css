@@ -126,7 +126,9 @@ body {
     min-height: 20rem; }
 
 .cb {
-  padding: 3rem 5rem 3rem 8rem; }
+  padding: 2.8rem 5rem 0 8rem; }
+  .cb:first-of-type {
+    padding: 3.5rem 5rem 0 8rem; }
 
 .cb-personal__list {
   list-style: none;
@@ -143,3 +145,40 @@ body {
     min-width: 40%; }
   .cb-personal__list-item--value {
     display: inline-block; }
+
+.cb-software__list {
+  list-style: none;
+  padding-top: 1.3rem;
+  font-size: 1.5rem; }
+
+.cb-software__list-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.7rem; }
+  .cb-software__list-item--property {
+    flex: 0 0 40%; }
+  .cb-software__list-item--value {
+    position: relative;
+    height: 0.7rem;
+    flex: 1;
+    background-color: #e2e2e2; }
+    .cb-software__list-item--value::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-right: 1.5px solid white;
+      background-color: #0aa1da; }
+  .cb-software__list-item--value-1::after {
+    width: 100%; }
+  .cb-software__list-item--value-2::after {
+    width: 95%; }
+  .cb-software__list-item--value-3::after {
+    width: 80%; }
+  .cb-software__list-item--value-4::after {
+    width: 70%; }
+  .cb-software__list-item--value-5::after {
+    width: 60%; }
+  .cb-software__list-item--value-6::after {
+    width: 50%; }

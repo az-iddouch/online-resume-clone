@@ -55,8 +55,13 @@
 }
 
 .cb {
-  padding: 3rem 5rem 3rem 8rem;
+  padding: 2.8rem 5rem 0 8rem;
+  &:first-of-type {
+    padding: 3.5rem 5rem 0 8rem;
+  }
 }
+
+// personal info
 .cb-personal {
   &__list {
     list-style: none;
@@ -74,6 +79,56 @@
     }
     &--value {
       display: inline-block;
+    }
+  }
+}
+
+// Softwar skills
+.cb-software {
+  &__list {
+    list-style: none;
+    padding-top: 1.3rem;
+    font-size: 1.5rem;
+  }
+  &__list-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.7rem;
+    &--property {
+      flex: 0 0 40%;
+    }
+    &--value {
+      position: relative;
+      height: 0.7rem;
+      flex: 1;
+      background-color: $color-grey-light;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-right: 1.5px solid white;
+        background-color: $color-primary;
+      }
+    }
+    &--value-1::after {
+      width: 100%;
+    }
+    &--value-2::after {
+      width: 95%;
+    }
+    &--value-3::after {
+      width: 80%;
+    }
+    &--value-4::after {
+      width: 70%;
+    }
+    &--value-5::after {
+      width: 60%;
+    }
+    &--value-6::after {
+      width: 50%;
     }
   }
 }
