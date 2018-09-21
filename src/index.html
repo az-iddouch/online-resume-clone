@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__upper">
-            <div class="wrapper">
+    <div class="container">
+        <header class="header">
+            <div class="header__upper padding-both">
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
@@ -28,30 +28,65 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-        <div class="header__hero wrapper">
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">John Snow</span>
-                    <span class="heading-primary--sub">Web Developer</span>
-                </h1>
+            <div class="header__hero padding-both">
+                <div class="header__text-box">
+                    <h1 class="heading-primary">
+                        <span class="heading-primary--main">John Snow</span>
+                        <span class="heading-primary--sub">Web Developer</span>
+                    </h1>
+                </div>
+                <div class="header__image-wrapper">
+                    <img src="imgs/john_snow.jpg" alt="image" class="header__image">
+                </div>
             </div>
-            <div class="header__image-wrapper">
-                <img src="imgs/john_snow.jpg" alt="image" class="header__image">
+        </header>
+        <section class="section-about padding-both">
+            <p class="section-about__text wrapper">Lorem, ipsum dolor placeat inventore, deserunt ab
+                nulla
+                consequatur facilis delectus officiis voluptas asperiores sit amet consectetur adipisicing voluptas
+                asperiores atque cupiditate. sequi placeat inventore, deserunt ab nulla consequatur facilis delectus
+                officiis voluptas asperiores atque cupiditate. Earum ipsum explicabo, esse exercitationem ullam culpa!</p>
+        </section>
+
+        <section class="section-content">
+            <div class="section-content__left ">
+                <div class="cb">
+                    <div class="cb-personal">
+                        <h2 class="heading-secondary">Personal</h2>
+                        <ul class="cb-personal__list">
+                            <li class="cb-personal__list-item">
+                                <span class="cb-personal__list-item--property">Name</span>
+                                <span class="cb-personal__list-item--value">John Snow</span>
+                            </li>
+                            <li class="cb-personal__list-item">
+                                <span class="cb-personal__list-item--property">Birthday</span>
+                                <span class="cb-personal__list-item--value">31st Dec 1990 (26)</span>
+                            </li>
+                            <li class="cb-personal__list-item">
+                                <span class="cb-personal__list-item--property">Relationship</span>
+                                <span class="cb-personal__list-item--value">Single</span>
+                            </li>
+                            <li class="cb-personal__list-item">
+                                <span class="cb-personal__list-item--property">Nationality</span>
+                                <span class="cb-personal__list-item--value">US Citizen</span>
+                            </li>
+                            <li class="cb-personal__list-item">
+                                <span class="cb-personal__list-item--property">Languages</span>
+                                <span class="cb-personal__list-item--value">English, French</span>
+                            </li>
+                            <li class="cb-personal__list-item">
+                                <span class="cb-personal__list-item--property">Telephone</span>
+                                <span class="cb-personal__list-item--value">+1(212) 123-4567</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="section-about">
-        <p class="section-about__text wrapper">Lorem, ipsum dolor placeat inventore, deserunt ab
-            nulla
-            consequatur facilis delectus officiis voluptas asperiores sit amet consectetur adipisicing voluptas
-            asperiores atque cupiditate. Earum ipsum explicabo, esse elit. Omnis
-            sequi
-            placeat inventore, deserunt ab
-            nulla
-            consequatur facilis delectus officiis voluptas asperiores atque cupiditate. Earum ipsum explicabo, esse
-            exercitationem ullam culpa!</p>
-    </section>
+            <div class="section-content__right">
+                right
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
