@@ -116,6 +116,7 @@ body {
     color: #e4e4e4; }
 
 .section-content {
+  color: #202020;
   display: flex; }
   .section-content__left {
     background-color: #fff;
@@ -182,3 +183,34 @@ body {
     width: 60%; }
   .cb-software__list-item--value-6::after {
     width: 50%; }
+
+.cb-hobbies__content {
+  padding-top: 1.3rem;
+  padding-left: 3px;
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1.8rem;
+  grid-row-gap: 0.7rem; }
+
+.cb-hobbies .hobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .cb-hobbies .hobby__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bbdaef;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%; }
+  .cb-hobbies .hobby__icon {
+    width: 55%;
+    fill: white; }
+  .cb-hobbies .hobby__label {
+    color: #202020;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 0.7rem; }
