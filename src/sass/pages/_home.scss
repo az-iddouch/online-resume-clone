@@ -43,14 +43,13 @@
   color: $dark-text-color;
   display: flex;
   &__left {
-    background-color: #fff;
+    background-color: $color-white;
     flex: 0 0 38%;
   }
 
   &__right {
     flex: 1;
-
-    background-color: yellowgreen;
+    background-color: $color-grey-lightest;
     min-height: 20rem;
   }
 }
@@ -170,5 +169,47 @@
       font-weight: 700;
       padding-top: 0.7rem;
     }
+  }
+}
+
+// Content - right section
+.cb-right {
+  padding-top: 3.4rem;
+  padding-left: 3rem;
+  padding-right: 8rem;
+}
+
+.section-content__right {
+}
+
+.right-section-work {
+  &__content-wrapper {
+    padding-top: 2rem;
+  }
+}
+
+.cb-year {
+  display: flex;
+  &__bullet {
+    flex: 0 0 11%;
+    background-color: yellowgreen;
+  }
+  &__content-wrapper {
+    flex: 1;
+    background-color: lightblue;
+  }
+  &__header {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    &--main {
+      margin-right: auto;
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   }
 }

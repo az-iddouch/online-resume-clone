@@ -37,6 +37,9 @@ body {
   padding-left: 8rem;
   padding-right: 8rem; }
 
+.u-padding-top {
+  padding-top: 1.5rem; }
+
 .header__upper {
   background-color: #0088cc;
   padding-top: 1.7rem;
@@ -119,11 +122,11 @@ body {
   color: #202020;
   display: flex; }
   .section-content__left {
-    background-color: #fff;
+    background-color: #f7f7f7;
     flex: 0 0 38%; }
   .section-content__right {
     flex: 1;
-    background-color: yellowgreen;
+    background-color: #eee;
     min-height: 20rem; }
 
 .cb {
@@ -214,3 +217,31 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     padding-top: 0.7rem; }
+
+.cb-right {
+  padding-top: 3.4rem;
+  padding-left: 3rem;
+  padding-right: 8rem; }
+
+.right-section-work__content-wrapper {
+  padding-top: 2rem; }
+
+.cb-year {
+  display: flex; }
+  .cb-year__bullet {
+    flex: 0 0 11%;
+    background-color: yellowgreen; }
+  .cb-year__content-wrapper {
+    flex: 1;
+    background-color: lightblue; }
+  .cb-year__header {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem; }
+    .cb-year__header--main {
+      margin-right: auto; }
+  .cb-year__text {
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
