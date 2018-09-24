@@ -45,6 +45,9 @@
   &__left {
     background-color: $color-white;
     flex: 0 0 38%;
+    box-shadow: 4px 0px 17px -3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
   }
 
   &__right {
@@ -190,13 +193,48 @@
 
 .cb-year {
   display: flex;
-  &__bullet {
-    flex: 0 0 11%;
-    background-color: yellowgreen;
+  &:last-of-type {
+    overflow: hidden;
   }
+  &__bullet-container {
+    flex: 0 0 12%;
+    position: relative;
+  }
+
+  &__bullet {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $color-primary-dark;
+    border-radius: 50%;
+    z-index: 12;
+  }
+
+  &__bullet-bg {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba($color-primary, 0.2);
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    z-index: 11;
+  }
+
+  &__bullet-line {
+    position: absolute;
+    top: 1rem;
+    left: 1.4rem;
+    width: 2px;
+    height: 120%;
+    background-color: rgba($color-primary, 0.5);
+    z-index: 10;
+  }
+
   &__content-wrapper {
     flex: 1;
-    background-color: lightblue;
   }
   &__header {
     display: flex;
