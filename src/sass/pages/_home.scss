@@ -111,7 +111,7 @@
         top: 0;
         left: 0;
         height: 100%;
-        border-right: 1.5px solid white;
+        border-right: 1.5px solid $color-white;
         background-color: $color-primary;
       }
     }
@@ -158,8 +158,8 @@
       justify-content: center;
       align-items: center;
       background-color: $color-primary-lightest;
-      width: 75px;
-      height: 75px;
+      width: 74px;
+      height: 74px;
       border-radius: 50%;
     }
     &__icon {
@@ -249,5 +249,72 @@
     font-size: 1.5rem;
     padding-bottom: 0.8rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Professional Skills section
+.right-section-professional-skills {
+  &__skills-wrapper {
+    display: flex;
+    padding-top: 2rem;
+  }
+  &__skill {
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background: $color-grey-light;
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+    &--1 {
+      background: conic-gradient($color-grey-light 0, $color-primary 0);
+    }
+    &--2 {
+      background: conic-gradient(
+        $color-grey-lightest 1%,
+        $color-grey-light 0 10%,
+        $color-grey-lightest 0 11%,
+        $color-primary 0
+      );
+    }
+    &--3 {
+      background: conic-gradient(
+        $color-grey-lightest 1%,
+        $color-grey-light 0 20%,
+        $color-grey-lightest 0 21%,
+        $color-primary 0
+      );
+    }
+    &--4 {
+      background: conic-gradient(
+        $color-grey-lightest 1%,
+        $color-grey-light 0 28%,
+        $color-grey-lightest 0 29%,
+        $color-primary 0
+      );
+    }
+    &--5 {
+      background: conic-gradient(
+        $color-grey-lightest 1%,
+        $color-grey-light 0 32%,
+        $color-grey-lightest 0 33%,
+        $color-primary 0
+      );
+    }
+  }
+  &__skill-inner-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background-color: $color-grey-lightest;
   }
 }

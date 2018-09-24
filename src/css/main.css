@@ -175,7 +175,7 @@ body {
       top: 0;
       left: 0;
       height: 100%;
-      border-right: 1.5px solid white;
+      border-right: 1.5px solid #f7f7f7;
       background-color: #0aa1da; }
   .cb-software__list-item--value-1::after {
     width: 100%; }
@@ -209,8 +209,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #bbdaef;
-    width: 75px;
-    height: 75px;
+    width: 74px;
+    height: 74px;
     border-radius: 50%; }
   .cb-hobbies .hobby__icon {
     width: 55%;
@@ -275,3 +275,40 @@ body {
     font-size: 1.5rem;
     padding-bottom: 0.8rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+
+.right-section-professional-skills__skills-wrapper {
+  display: flex;
+  padding-top: 2rem; }
+
+.right-section-professional-skills__skill {
+  position: relative;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background: #e2e2e2; }
+  .right-section-professional-skills__skill:not(:last-of-type) {
+    margin-right: 1.5rem; }
+  .right-section-professional-skills__skill--1 {
+    background: conic-gradient(#e2e2e2 0, #0aa1da 0); }
+  .right-section-professional-skills__skill--2 {
+    background: conic-gradient(#eee 1%, #e2e2e2 0 10%, #eee 0 11%, #0aa1da 0); }
+  .right-section-professional-skills__skill--3 {
+    background: conic-gradient(#eee 1%, #e2e2e2 0 20%, #eee 0 21%, #0aa1da 0); }
+  .right-section-professional-skills__skill--4 {
+    background: conic-gradient(#eee 1%, #e2e2e2 0 28%, #eee 0 29%, #0aa1da 0); }
+  .right-section-professional-skills__skill--5 {
+    background: conic-gradient(#eee 1%, #e2e2e2 0 32%, #eee 0 33%, #0aa1da 0); }
+
+.right-section-professional-skills__skill-inner-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  width: 7.4rem;
+  height: 7.4rem;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: #eee; }
