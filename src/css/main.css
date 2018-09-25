@@ -278,6 +278,7 @@ body {
 
 .right-section-professional-skills__skills-wrapper {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 2rem; }
 
 .right-section-professional-skills__skill {
