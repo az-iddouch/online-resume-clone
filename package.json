@@ -4,13 +4,22 @@
   "description": "boiler plate for sass projects",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "watch": "gulp watch",
+    "build": "gulp build"
   },
   "author": "abdelaziz",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.1.5",
+    "run-sequence": "^2.2.1"
   }
 }
