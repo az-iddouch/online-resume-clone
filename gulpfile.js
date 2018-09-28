@@ -1,15 +1,15 @@
-const gulp = require("gulp");
-const sass = require("gulp-sass");
-const autoprefixer = require("gulp-autoprefixer");
-const browserSync = require("browser-sync").create();
-const useref = require("gulp-useref");
-const uglify = require("gulp-uglify");
-const gulpIf = require("gulp-if");
-const cssnano = require("gulp-cssnano");
-const imagemin = require("gulp-imagemin");
-// const cache = require("gulp-cache");
-const del = require("del");
-const runSequence = require("run-sequence");
+var gulp = require("gulp");
+var sass = require("gulp-sass");
+var autoprefixer = require("gulp-autoprefixer");
+var browserSync = require("browser-sync").create();
+var useref = require("gulp-useref");
+var uglify = require("gulp-uglify");
+var gulpIf = require("gulp-if");
+var cssnano = require("gulp-cssnano");
+var imagemin = require("gulp-imagemin");
+// var cache = require("gulp-cache");
+var del = require("del");
+var runSequence = require("run-sequence");
 
 gulp.task("browser-sync", function() {
   browserSync.init({
@@ -64,12 +64,6 @@ gulp.task("images", function() {
   );
 });
 
-// Moves all fonts into /dist folder
-// gulp.task("fonts", function() {
-//   return gulp.src("src/fonts/**/*").pipe(gulp.dest("dist/fonts"));
-// });
-
-// Gulp will delete the `dist` folder for you whenever gulp clean:dist is run.
 gulp.task("clean:dist", function() {
   return del.sync("dist");
 });
